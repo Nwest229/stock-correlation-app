@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.title("📈 Stock Correlation Matrix Web App")
+st.title("Stock Correlation Matrix Web App")
 
 tickers = st.text_input(
     "Enter ticker symbols separated by commas (e.g. AAPL, MSFT, GOOGL):",
