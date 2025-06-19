@@ -26,8 +26,8 @@ if st.button("Show Correlation Matrix"):
         st.dataframe(rounded_corr)
         fig, ax = plt.subplots(figsize=(12, 12))
         sns.heatmap(
-            rounded_corr, annot=True, fmt=".2f", cmap="coolwarm",
-            vmin=-1, vmax=1, linewidths=0, cbar=True, ax=ax
+            rounded_corr,annot=True,fmt=".2f",cmap="RdYlGn",vmin=-1,
+            vmax=1,linewidths=0,cbar=True,square=True,ax=ax
         )
         ax.set_title("Stock Correlation Matrix", fontsize=16, pad=20)
         plt.xticks(rotation=45, ha='right')
