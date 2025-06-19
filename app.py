@@ -24,7 +24,7 @@ if st.button("Show Correlation Matrix"):
         rounded_corr = clean_corr.round(2)
         st.write("### Correlation Matrix")
         st.dataframe(rounded_corr)
-        fig, ax = plt.subplots(figsize=(10, 8))
+        fig, ax = plt.subplots(figsize=(12, 12))
         sns.heatmap(
             rounded_corr, annot=True, fmt=".2f", cmap="coolwarm",
             vmin=-1, vmax=1, linewidths=0.5, cbar=True, ax=ax
